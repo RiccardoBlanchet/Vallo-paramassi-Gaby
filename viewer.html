@@ -206,7 +206,7 @@
       <div class="icon">📂</div>
       <h2>Seleziona il file del modello</h2>
       <p>Il browser blocca l'accesso ai file locali per sicurezza.<br>
-         Scegli il file <strong>Vallo texturizzato 2.glb</strong><br>
+         Scegli il file <strong>Vallo-paramassi.glb</strong><br>
          dalla stessa cartella di questo HTML.</p>
 
       <!-- Input file REALE nel DOM, non creato dinamicamente -->
@@ -218,7 +218,7 @@
   <!-- Visualizzatore 3D -->
   <model-viewer
     id="mv"
-    src="https://github.com/RiccardoBlanchet/Vallo-paramassi-Gaby/releases/download/v1.0/Vallo.texturizzato.2.glb"
+    src="./Vallo-paramassi.glb"
     alt="Vallo paramassi – modello 3D texturizzato"
     camera-controls
     auto-rotate
@@ -347,10 +347,4 @@
       a.href  = url;
       a.download = 'vallo_paramassi.png';
       a.click();
-      setTimeout(function() { URL.revokeObjectURL(url); }, 60000);
-    });
-  }
-</script>
-
-</body>
-</html>
+      setTimeout(function() 
